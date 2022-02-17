@@ -1,0 +1,66 @@
+/* Artistas */
+#bodyArtistas .container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,250px);
+    border: 2px solid #fff;
+    grid-gap: 25px;
+    text-align: center;
+    align-items: center;
+    grid-template-areas: "box1 box2 box3"
+                         "box4 box5 box6"               
+    ;
+    font-size: xx-large;
+    }
+    #bodyArtistas .item {
+    /*     min-width: 200px;
+        min-height: 200px ;
+     */    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    
+    transition: 0.6s ease-in-out;
+    }
+    #bodyArtistas .item:hover {
+    transform: scale(1.4);
+    filter:saturate(2);
+    }
+    #bodyArtistas .box1 {
+        grid-area: "box1";
+    }
+    #bodyArtistas .box2 {
+        grid-area: "box2";
+    }
+    #bodyArtistas .box3 {
+        grid-area: "box3";
+    }
+    #bodyArtistas .box4 {
+        grid-area: "box4";
+    }
+    #bodyArtistas .box5 {
+        grid-area: "box5";
+    }
+    #bodyArtistas .box6 {
+        grid-area: "box6";
+    }
+    @media only screen and (max-width: 319px) {
+        #bodyArtistas .container {
+            grid-template-columns: repeat(1,auto);
+            grid-template-rows: repeat(6,130px);
+            grid-template-areas: "box1"
+                                "box2"
+                                "box3"
+                                "box4"
+                                "box5"
+                                "box6";
+            font-size: large;
+        }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+    #bodyArtistas .container {
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,150px);
+        grid-template-areas: "box1 box2"
+                                "box3 box4"
+                                "box5 box6";
+            font-size: x-large;
+                            }
+    }

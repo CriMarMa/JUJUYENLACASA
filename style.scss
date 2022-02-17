@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import "./scss-f/variables";
+@import "./scss-f/header";
+@import './scss-f/footer';
+@import "./scss-f/page-eventos";
+
+.clearfix{
+    clear: both;
+}
+
+@import "./scss-f/page-contacto";
+
+@import "./scss-f/rrss";
+
+/* Backgrounds */
+#bodyArtistas {
+    background-image: url("./Media/concert-4.jpg");
+    background-size: cover;
+
+}
+#bodyMusica {
+    background-image: url("./Media/concert-5.png");
+    background-size: cover;
+
+}
+#bodyNoticias {
+    background-image: url("./Media/concert-6.png");
+    background-size: cover;
+
+}
+@import "./scss-f/page-tienda";
+
+@import "./scss-f/page-artistas";
+
